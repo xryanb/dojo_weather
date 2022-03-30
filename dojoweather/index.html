@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+</head>
+<body>
+<!--nav-->
+<div class="nav d-flex justify-evenly align-center">
+    <h1>Dojo Weather</h1>
+<div>
+<ul class="d-flex justify-evenly">
+    <li><a href="#" id="burbank" onclick="tapHere()">Burbank</a></li>
+    <li><a href="#" id="chicago" onclick="tapHere()">Chicago</a></li>
+    <li><a href="#" id="dallas" onclick="tapHere()">Dallas</a></li>
+</ul>
+</div>
+</div>
+
+
+<!--Header-->
+<div class="d-flex justify-between align-center header">
+    <h1>San Jose</h1>
+<div class="show-temp d-flex">
+    <label for="temp" class="show-label">show temperature in</label>
+<select name="temperature" id="temp" class="temperature">
+    <option value="c">&#176;C</option>
+    <option value="f" onclick="convert(this)">&#176;F</option>
+</select>
+</div>
+</div>
+
+<!--mid forecast-->
+<div class="weather d-flex align-center justify-around">
+
+<div class="forecast">
+    <h2> Today</h2>
+    <div class="info">
+        <img src="/assets/some_rain.png" alt="rain">
+        <p>some rain</p>
+        <ul class="d-flex justify-around">
+        <li class="red">24&#176;</li>
+        <li class="blue">18&#176;</li>
+    </ul>
+    </div>
+</div>
+
+
+<div class="forecast">
+    <h2> Tomorrow</h2>
+    <div class="info">
+        <img src="/assets/some_sun.png" alt="sun">
+        <p>some sun</p>
+        <ul class="d-flex justify-around">
+        <li class="red">27&#176;</li>
+        <li class="blue">19&#176;</li>
+    </ul>
+    </div>
+</div>
+
+
+<div class="forecast">
+    <h2> Friday</h2>
+    <div class="info">
+        <img src="/assets/some_clouds.png" alt="clouds">
+        <p>some clouds</p>
+        <ul class="d-flex justify-around">
+        <li class="red">21&#176;</li>
+        <li class="blue">16&#176;</li>
+    </ul>
+    </div>
+</div>
+
+
+
+<div class="forecast ">
+    <h2> Friday</h2>
+    <div class="info">
+        <img src="/assets/some_clouds.png" alt="clouds">
+        <p>some clouds</p>
+        <ul class="d-flex justify-around">
+        <li class="red">21&#176;</li>
+        <li class="blue">16&#176;</li>
+    </ul>
+    </div>
+</div>
+
+</div>
+<!--Cookies!!-->
+<footer>
+<div class="cookies d-flex align-center justify-evenly" id="bye">
+    <div class="stop">
+        <h2>Stop! Cookie time</h2>
+    <div class="d-flex align-center justify-around accept">
+        <img src="/assets/cookie.png" alt="cookie" class="edibles">
+        <p class="spam">We use cookies (sadly not the edible ones) to personalize<br>
+        content and ads, to provide social media featues and to <br>
+        analyse our traffic. <a href="#" target="_blank" class="read">Read more...</a>
+        </p>
+        <button onclick="beGone('#bye')">I Accept</button>
+    </div>
+    </div>
+</div>
+</footer> 
+
+
+
+
+<script src="/script.js"></script> 
+</body>
+</html>
