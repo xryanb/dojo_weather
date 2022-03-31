@@ -75,6 +75,10 @@
     border: 2px solid black;
 }
 /* middle */
+#celsius{
+    display: flex;
+}
+
 .weather{
     width: 70%;
     margin: 0 auto;
@@ -119,6 +123,12 @@ h2{
 
 .blue{
     color: rgb(43,120,228);
+}
+
+
+/* to farenheit*/
+#alikazam{
+    display: none;
 }
 
 /* cookies!! */

@@ -26,15 +26,15 @@
     <h1>San Jose</h1>
 <div class="show-temp d-flex">
     <label for="temp" class="show-label">show temperature in</label>
-<select name="temperature" id="temp" class="temperature">
-    <option value="c">&#176;C</option>
-    <option value="f" onclick="convert(this)">&#176;F</option>
+<select name="temperature" id="temp" class="temperature" onchange="convert('this');">
+    <option value="celsius">&#176;C</option>
+    <option value="farenheit">&#176;F</option>
 </select>
 </div>
 </div>
 
 <!--mid forecast-->
-<div class="weather d-flex align-center justify-around">
+<div class="weather d-flex align-center justify-around" id="celsius">
 
 <div class="forecast">
     <h2> Today</h2>
@@ -42,8 +42,8 @@
         <img src="/assets/some_rain.png" alt="rain">
         <p>some rain</p>
         <ul class="d-flex justify-around">
-        <li class="red">24&#176;</li>
-        <li class="blue">18&#176;</li>
+        <li class="red" id="r1">24&#176;</li>
+        <li class="blue" id="b1">18&#176;</li>
     </ul>
     </div>
 </div>
@@ -55,8 +55,8 @@
         <img src="/assets/some_sun.png" alt="sun">
         <p>some sun</p>
         <ul class="d-flex justify-around">
-        <li class="red">27&#176;</li>
-        <li class="blue">19&#176;</li>
+        <li class="red" id="r2">27&#176;</li>
+        <li class="blue" id="b2">19&#176;</li>
     </ul>
     </div>
 </div>
@@ -68,8 +68,8 @@
         <img src="/assets/some_clouds.png" alt="clouds">
         <p>some clouds</p>
         <ul class="d-flex justify-around">
-        <li class="red">21&#176;</li>
-        <li class="blue">16&#176;</li>
+        <li class="red" id="r3">21&#176;</li>
+        <li class="blue" id="b3">16&#176;</li>
     </ul>
     </div>
 </div>
@@ -82,13 +82,74 @@
         <img src="/assets/some_clouds.png" alt="clouds">
         <p>some clouds</p>
         <ul class="d-flex justify-around">
-        <li class="red">21&#176;</li>
-        <li class="blue">16&#176;</li>
+        <li class="red" id="r4">21&#176;</li>
+        <li class="blue" id="b4">16&#176;</li>
     </ul>
     </div>
 </div>
 
 </div>
+
+<!--on switch to Farenheit-->
+
+<div class="weather d-flex align-center justify-around" id="alikazam">
+
+    <div class="forecast">
+        <h2> Today</h2>
+    <div class="info">
+        <img src="/assets/some_rain.png" alt="rain">
+        <p>some rain</p>
+        <ul class="d-flex justify-around">
+        <li class="red">75&#176;</li>
+        <li class="blue">65&#176;</li>
+    </ul>
+    </div>
+</div>
+    
+    
+    <div class="forecast">
+        <h2> Tomorrow</h2>
+    <div class="info">
+        <img src="/assets/some_sun.png" alt="sun">
+        <p>some sun</p>
+        <ul class="d-flex justify-around">
+        <li class="red">80&#176;</li>
+        <li class="blue">66&#176;</li>
+        </ul>
+    </div>
+    </div>
+    
+    
+    <div class="forecast">
+        <h2> Friday</h2>
+    <div class="info">
+        <img src="/assets/some_clouds.png" alt="clouds">
+        <p>some clouds</p>
+        <ul class="d-flex justify-around">
+        <li class="red">69&#176;</li>
+        <li class="blue">61&#176;</li>
+        </ul>
+    </div>
+    </div>
+    
+    
+    
+    <div class="forecast ">
+        <h2> Friday</h2>
+    <div class="info">
+        <img src="/assets/some_clouds.png" alt="clouds">
+        <p>some clouds</p>
+        <ul class="d-flex justify-around">
+        <li class="red">78&#176;</li>
+        <li class="blue">70&#176;</li>
+        </ul>
+        </div>
+    </div>
+    
+    </div>
+
+
+
 <!--Cookies!!-->
 <footer>
 <div class="cookies d-flex align-center justify-evenly" id="bye">
